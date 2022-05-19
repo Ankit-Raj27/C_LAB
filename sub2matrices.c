@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int a[2][2], b[2][2], sum[2][2] = {},sub[2][2]={}, i, j;
+    int a[2][2], b[2][2], sum[2][2] = {}, i, j;
 
     printf("\nEnter elements of 1st matrix:\n");
     for (i = 0; i < 2; ++i)
@@ -40,24 +40,15 @@ int main()
 
     // adding two matrices
     for (i = 0; i < 2; ++i)
-    {
         for (j = 0; j < 2; ++j)
         {
-            sum[i][j] = a[i][j] + b[i][j];
+            sum[i][j] = a[i][j] - b[i][j];
         }
-    }
-    for (i = 0; i < 2; ++i)
-    {
-        for (j = 0; j < 2; ++j)
-        {
-            sub[i][j] = a[i][j] - b[i][j];
-        }
-    }
+
     // printing the result
-    printf("\nSum of two matrices, A+B: \n");
+    printf("\nSubtraction of two matrices, A-B : \n");
     for (i = 0; i < 2; ++i)
         for (j = 0; j < 2; ++j)
- {
         {
             printf("%d  ", sum[i][j]);
             if (j == 1)
@@ -65,18 +56,6 @@ int main()
                 printf("\n");
             }
         }
-}
-printf("\nSubtraction of two matrices, A-B : \n");
-    for (i = 0; i < 2; ++i)
-    {
-        for (j = 0; j < 2; ++j)
-        {
-            printf("%d  ", sub[i][j]);
-            if (j == 1)
-            {
-                printf("\n");
-            }
-        }
-    }
+
     return 0;
 }

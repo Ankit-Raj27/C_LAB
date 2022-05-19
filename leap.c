@@ -10,7 +10,7 @@ int leapYear(int y)
 int main()
 {
     int year;
-    printf("Enter the year for check leap\n");
+    printf("Enter the year for check leap : \n");
     scanf("%d",&year);
 
     if(leapYear(year))
