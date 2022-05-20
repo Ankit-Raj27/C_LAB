@@ -11,8 +11,7 @@ void swap_first_and_last(char* str) {
 	// swap str[0] and str[n-1]
 	temp = str[0];
 	str[0] = str[n - 1];
-	str[n - 1] = temp;
-
+	str[n - 1] = temp;	
 }
 
 int main() {
