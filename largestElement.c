@@ -7,7 +7,7 @@ int main()
     printf("Enter total no. of elements (1-100) : ");
     scanf("%d",&n);
     data=(float*) calloc(n,sizeof(float));
-    printf("\n Enter the number %d : ", i+1);
+    printf("\nEnter the number %d : ", i+1);
     for (i=0; i<n ; i++)
     {
         scanf("%f", data+i);
