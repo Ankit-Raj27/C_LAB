@@ -3,11 +3,11 @@
 int main()
 {
     int i;
-    char name[] = {"ANKIT"};
-
-    for(i=0;i<5;i++)
+    char name[] = {"Ankit Raj"};
+    char new_name[20];
+    for(i=0;i<name.length;i++)
     {
-        ++name[i];
+        
         printf("%c", name[i]);
     }
     return 0;
