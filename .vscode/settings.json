@@ -30,6 +30,8 @@
   ],
   "files.associations": {
     "stdio.h": "c",
-    "cmath": "c"
+    "cmath": "c",
+    "iostream": "cpp",
+    "sstream": "cpp"
   }
 }
